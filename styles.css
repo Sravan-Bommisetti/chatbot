@@ -1,0 +1,104 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('a1.gif') left no-repeat, url('a1.gif') right no-repeat ; /* Adds the GIF to both sides */
+    background-attachment: fixed; /* Keeps the background images fixed while scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    background-position: 20px center, 50px right;
+}
+
+        .chat-container {
+            width: 600px;
+            height: 600px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+
+        .chat-header {
+            padding: 15px;
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        #chat-output {
+            padding: 15px;
+            flex-grow: 1;
+            overflow-y: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .user-message {
+            color: #444;
+            background-color: #e1f5fe;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: right;
+        }
+
+        .assistant-message {
+            color: #444;
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 15px;
+        }
+
+        #user-input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        #submit-btn {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #submit-btn:hover {
+            background-color: #3700b3;
+        }
+
+        /* Styling for the clickable link within the chat */
+        .assistant-message a {
+            color: #6200ea;
+            text-decoration: none;
+            font-weight: bold;
+            word-wrap: break-word; /* Ensures long links wrap correctly */
+            display: inline-block;
+            width: 100%; /* Forces link to align properly within message */
+        }
+
+        .assistant-message a:hover {
+            text-decoration: underline;
+        }
+
+        .assistant-message strong {
+            font-weight: bold;
+            color: #333;
+        }
+    
